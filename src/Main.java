@@ -42,7 +42,7 @@ public class Main {
         Gato gatito = new Gato("Cleo", "negro", 2.0, 0.75, true);
         Delfin delfi = new Delfin();
 
-        System.out.println("[Mi gata se llama " + gatito.getNombre() + "]");
+        System.out.println("[Mi gatito lindo se llama " + gatito.getNombre() + "]");
 
         System.out.println(gatito.moverse());
         System.out.println(delfi.moverse());
