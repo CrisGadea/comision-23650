@@ -1,5 +1,10 @@
+import animales.Aguila;
+import animales.Animal;
 import animales.Delfin;
 import animales.Gato;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -35,7 +40,7 @@ public class Main {
 //        System.out.println("Hola, me llamo " + nombre + ", tengo " + edadDeCristian +
 //                " años, y mido: " + ALTURA_CRISTIAN + "m");
 
-         */
+
 
 
         // CREACION DE ANIMALES
@@ -46,5 +51,12 @@ public class Main {
 
         System.out.println(gatito.moverse());
         System.out.println(delfi.moverse());
+
+         */
+
+        List<String> nombres = new ArrayList<String>();
+
+        Animal animal = new Aguila();
+        System.out.println(animal.moverse());
     }
 }

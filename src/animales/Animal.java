@@ -1,6 +1,6 @@
 package animales;
 
-public class Animal {
+public abstract class Animal implements Movible, Comunicable{
     // Caracteristicas de un animal
     String nombre;
     String color;
@@ -52,11 +52,7 @@ public class Animal {
 
     // Comportamientos de un animal
 
-    // comer
-    // dormir
-
     // moverse
-    public String moverse(){
-        return "El animal se está moviendo";
-    }
+
+    public abstract void comer();
 }

@@ -9,10 +9,17 @@ public class Gato extends Animal{
         this.tieneGarras = tieneGarras;
     }
 
+    public Gato(){}
+
     // Sobreescribimos el método moverse
-    @Override
+
     public String moverse(){
         return "El gato corre";
+    }
+
+    @Override
+    public void comer() {
+
     }
 
 }
