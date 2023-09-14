@@ -1,15 +1,23 @@
 package animales;
 
-public class Gato extends Animal{
+public class Gato extends Animal implements Comunicable{
 
-    Boolean tieneGarras;
-
-    public Gato(String nombre, String color, double peso, double tamano, Boolean tieneGarras){
-        super(nombre,color, peso, tamano);
-        this.tieneGarras = tieneGarras;
+    static{
+        System.out.println("Se cargó la clase Gato");
     }
 
-    public Gato(){}
+    private Boolean tieneGarras;
+
+    public static int cantGatos;
+
+    public Gato(String nombre, String color, double peso, double tamano, Boolean tieneGarras){
+        this.tieneGarras = tieneGarras;
+        cantGatos++;
+    }
+
+    public Gato(){
+        cantGatos++;
+    }
 
     // Sobreescribimos el método moverse
 
@@ -17,9 +25,18 @@ public class Gato extends Animal{
         return "El gato corre";
     }
 
-    @Override
+
     public void comer() {
 
     }
 
+
+    public void enviarMensaje(String mensaje, Comunicable receptor) {
+
+    }
+
+
+    public void recibirMensaje(String mensaje, Comunicable emisor) {
+
+    }
 }

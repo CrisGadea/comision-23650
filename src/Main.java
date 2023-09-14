@@ -4,6 +4,7 @@ import animales.Delfin;
 import animales.Gato;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -52,11 +53,33 @@ public class Main {
         System.out.println(gatito.moverse());
         System.out.println(delfi.moverse());
 
-         */
 
-        List<String> nombres = new ArrayList<String>();
+
+        List<String> nombres = new LinkedList<String>();
 
         Animal animal = new Aguila();
         System.out.println(animal.moverse());
+
+        System.out.println("Cantidad de gatos actual: " + Gato.cantGatos);
+
+        Gato gato1 = new Gato();
+
+        System.out.println("Cantidad de gatos actual: " + Gato.cantGatos);
+
+        Gato gato2 = new Gato();
+
+        System.out.println("Cantidad de gatos actual: " + Gato.cantGatos);
+*/
+        int numero1 = 10;
+        int numero2 = 20;
+
+        System.out.println("El resultado de restar " + numero1 + " - " + numero2 + " es: "
+                + Calculadora.resta(numero1,numero2));
+
+
+        Calculadora.ClaseAnidada claseAnidada = new Calculadora.ClaseAnidada();
+
+        claseAnidada.mostrarMensaje();
+
     }
 }

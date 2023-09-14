@@ -1,21 +1,12 @@
 package animales;
 
-public abstract class Animal implements Movible, Comunicable{
+public abstract class Animal implements Movible{
     // Caracteristicas de un animal
     String nombre;
     String color;
     double peso;
     double tamano;
 
-    // Definimos los métodos constructores
-    public Animal(){}
-
-    public Animal(String nombre, String color, double peso, double tamano) {
-        this.nombre = nombre;
-        this.color = color;
-        this.peso = peso;
-        this.tamano = tamano;
-    }
 
     // Metodos Getters y Setters
     public String getNombre(){
@@ -55,4 +46,5 @@ public abstract class Animal implements Movible, Comunicable{
     // moverse
 
     public abstract void comer();
+
 }

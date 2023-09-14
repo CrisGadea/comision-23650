@@ -6,7 +6,6 @@ public class Aguila extends Animal{
         return "El ave vuela";
     }
 
-    @Override
     public void comer() {
 
     }
